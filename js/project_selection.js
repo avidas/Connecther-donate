@@ -8,10 +8,12 @@ EventDonor.projectObserver = {
     currentProject = EventDonor.projectsJson[i];
     console.log( currentProject );
     $( "#project-list" ).append(
+        '<div class="row">' +
         '<div class="project-listing" id="' + currentProject.id + '">\n' +
           '<img src="../assets/img/agricultural_union.jpg">\n' +
           '<h3>' + currentProject.title + '</h3>\n' +
           '<p>' + currentProject.description + '</p>\n' +
+        '</div>' +
         '</div>'
     );
   }
