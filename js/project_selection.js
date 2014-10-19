@@ -10,7 +10,7 @@ EventDonor.projectObserver = {
     $( "#project-list" ).append(
         '<div class="row">' +
         '<div class="project-listing" id="' + currentProject.id + '">\n' +
-          '<img src="../assets/img/agricultural_union.jpg">\n' +
+          '<img src="/images/project/' + currentProject.logo + ">\n +' +
           '<h3>' + currentProject.title + '</h3>\n' +
           '<p>' + currentProject.description + '</p>\n' +
         '</div>' +
