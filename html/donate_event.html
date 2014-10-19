@@ -12,16 +12,21 @@
     <title>SB Admin 2 - Bootstrap Admin Theme</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="event/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Timeline CSS -->
-    <link href="css/plugins/timeline.css" rel="stylesheet">
+    <link href="event/css/plugins/timeline.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link href="event/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="event/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="../styles/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="../styles/css/icons.css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,44 +34,90 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style type="text/css">
+        .mainRow{
+            padding: 15px;
+            margin-bottom: 50px;
+            margin-top: 60px;
 
+        }
+
+        .impactPanel{
+            display: none;
+        }
+
+        .profilePanel{
+            padding: 15px;
+        }
+
+        .profile-pic{
+            display: inline-block;
+            float: left;
+        }
+
+        .profile-pic img{
+            height: 100px;
+            width: 100px;
+            border-radius: 80px;
+        }
+        .profile-text{
+            margin-left: 10px;
+            /*display: inline-block;*/
+            float: left;
+        }
+
+        .panel-default>.panel-heading {
+            color: #976aad;
+        }
+
+        h1, h3{
+            color: #976aad!important;   
+        }
+    </style>
 </head>
 
 <body>
+
+
     <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div id = "chNav" class="navbar nav-default navbar-fixed-top" role = "navigation">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+        <div class = "navbar-header">
+          <a class = "chA navbar-brand" href = "#">Birthday Donate Party</a>
         </div>
         <div class="navbar-collapse collapse">
-            <div >
-                <form method="post" class="form form-reset text-center" action="">
-                    <input type="submit" value="Donate" class="btn btn-lg btn-success navbar-btn text-center">
-                </form>
-            </div>
-          <ul class="nav navbar-nav">
-          </ul>
           <ul class="nav navbar-nav navbar-right">
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
+            <li>
+              <a class = "chA" href="">
+                <i id = "glass" class="icon ibm-glasses"></i>
+              </a>
+            </li>
+            <li>
+              <a class = "chA" href="#">
+                <i id = "folder" class="icon ibm-folder"></i>
+              </a>
+            </li>
+            <li>
+              <a class = "chA" href="#">
+                <img style = "width: 30px; border-radius: 15px;" src = "http://images.ak.instagram.com/profiles/profile_179722912_75sq_1339942564.jpg">
 
-    <div class="container" style="display: inline">
-      <div class="row">
+              </a>
+            </li>      
+          </ul>     
+        </div>
+      </div>      
+    </div>
+      
+
+    <div class="container" style="">
+      <div class="row mainRow">
 
         <div class="col-lg-4 col-md-4">
-          <div class="panel panel-default">
-              <div id="profile-pic">
+          <div class="panel panel-default profilePanel">
+              <div class="profile-pic">
                 <img src="http://images.ak.instagram.com/profiles/profile_179722912_75sq_1339942564.jpg" class="img-rounded">
               </div>
-              <div>
+              <div class="profile-text">
                 <p>Kathy Lee <br>36<br>Austin, Texas</p>
               </div>
               <div id="social sharing">
@@ -252,7 +303,7 @@
                     </div>
                     <!-- /.panel .chat-panel -->
                     <!-- /.panel -->
-                    <div class="panel panel-default">
+                    <div class="panel panel-default impactPanel">
                         <div class="panel-heading">
                             <i class="fa fa-clock-o fa-fw"></i> Impact
                         </div>
@@ -373,13 +424,13 @@
     </div> <!-- /container -->
 
     <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
+    <script src="event/js/jquery-1.11.0.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="event/js/bootstrap.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/sb-admin-2.js"></script>
+    <script src="event/js/sb-admin-2.js"></script>
 
 </body>
 
