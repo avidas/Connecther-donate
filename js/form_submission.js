@@ -8,7 +8,6 @@
 
   $( ".event-register" ).submit(function( event ){
     event.preventDefault(); 
-    console.log(postObject);
-    // $.post( "url", postObject );
+    $.post( "url", postObject );
   })
 }(jQuery));

@@ -1,39 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+<!-- this goes in <head>: -->
 
-    <!-- Le styles -->
-    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <link href="../lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="../assets/css/projects.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="../lib/bootstrap/html5shiv.js"></script>
-    <![endif]-->
+<link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+<style>
+  body {
+    padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+  }
+</style>
+<link href="../lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="../assets/css/projects.css" rel="stylesheet">
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
-  </head>
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="../assets/js/html5shiv.js"></script>
+<![endif]-->
 
-  <body>
+<!-- form -->
     <div class="project-form">
       <button type="button" class="btn btn-primary" data-toggle="button" id="19">General Fund</button>
-      <p>Select to fund ConnectHer in general—</p>
+      <p>Select to fund ConnectHer in general&mdash;</p>
       <p>or fund a specific project:</p>
       <br>
       <p>Browse:</p>
@@ -116,14 +102,33 @@
         </div>
       </ul>
     </div>
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../js/setup.js"></script>
-    <script src="../js/projects.json"></script>
-    <script src="../js/project_selection.js"></script>
-    <script src="../js/form_submission.js"></script>
-  </body>
-</html>
+
+    <div id='name-event-form'>
+      <h2>Name your event page</h2>
+      <form class="navbar-form pull-left event-register">
+        <label for="event-title">Title</label>
+        <input type="text" class="span4" id="event-title"><br>
+        <label for="event-title">Subtitle</label>
+        <input type="text" class="span4" id="event-subtitle"><br>
+      </form>
+    </div>
+
+    <div id='tell-friends-form'>
+      <h2 id="tell-friends">Tell your friends</h2>
+      <form class="navbar-form pull-left event-register">
+        <label for="friends-emails">Emails</label>
+        <input type="text" class="span4" id="friends-emails"><br> 
+        <label for="friends-emails">Message</label>
+        <input type="text" class="span4" id="friends-message" value="Tell your friends about your event..."><br>
+        <input type="submit" class="btn btn-default" value="Send"><br>
+      </form>
+    </div>
+
+<!-- this goes at the bottom of <body>: -->
+
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../js/setup.js"></script>
+<script src="../js/projects.json"></script>
+<script src="../js/project_selection.js"></script>
+<script src="../js/form_submission.js"></script>

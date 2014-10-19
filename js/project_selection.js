@@ -1,10 +1,23 @@
-EventDonor = {};
-
 EventDonor.projectObserver = {
   selectedProjectID: ""
 };
 
 (function($){
+  var currentProject = {};
+  for ( var i = 0; i < EventDonor.projectsJson.length; i++ ) {
+    currentProject = EventDonor.projectsJson[i];
+    console.log( currentProject );
+    $( "#project-list" ).append(
+        '<div class="row">' +
+        '<div class="project-listing" id="' + currentProject.id + '">\n' +
+          '<img src="../assets/img/agricultural_union.jpg">\n' +
+          '<h3>' + currentProject.title + '</h3>\n' +
+          '<p>' + currentProject.description + '</p>\n' +
+        '</div>' +
+        '</div>'
+    );
+  }
+
   var projects = $( ".project-listing" );
   var focusColor = "#dcecf7";
   var generalFundButton = $( "#19" );
@@ -36,4 +49,7 @@ EventDonor.projectObserver = {
     untoggleProjects();
     updateProjectObserver( $( generalFundButton ).attr( 'id' ) );
   } )
+
+  console.log( EventDonor.projectsJson );
+
 }(jQuery))
