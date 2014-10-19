@@ -53,7 +53,29 @@
         </div>
       </div>
     </div>
-   
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">Pledge Your Friends</h4>
+          </div>
+          <div class="modal-body">
+            <div>
+              <input class = "inputModal" id = "input" type = "text" placeholder = "To">
+            </div>
+            <div>
+              <textarea id = "textArea" class = "inputModal" placeholder = "Tell your friends why you want to donate this project"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id = "chBtn" class="btn" data-dismiss="modal">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="../lib/bootstrap/js/bootstrap.min.js"></script>

@@ -11,7 +11,7 @@ $(function(){
 			logoUrl = "http://www.connecther.org/images/project/" + project.logo;
 			if(!project.logo) logoUrl = "http://www.connecther.org/skins/cs/images/df_logo2.png";
 
-			p += '<div class = "col-md-3 donatePro"><img class = "projectIMG" src ="' + logoUrl+'"><div class = "projectTitle">'+project.title+'</div></div>';
+			p += '<div class = "col-md-3 donatePro" data-toggle = "modal" data-target = "#myModal"><img class = "projectIMG" src ="' + logoUrl+'"><div class = "projectTitle">'+project.title+'</div></div>';
 			// p += '<img src="' + logoUrl+'">';
 			
 
