@@ -43,9 +43,9 @@ body {
       font-size: 30px; }
     #chNav .chA #folder {
       font-size: 25px; }
-    #chNav .chA #search {
-      position: relative;
-      color: #f2f2f2; }
+
+#search {
+  color: purple; }
 
 #content {
   margin-top: 5em; }
@@ -67,3 +67,49 @@ body {
     #content .donatePro .projectIMG {
       max-width: 100%;
       max-height: 100%; }
+
+.inputModal {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 400px; }
+  .inputModal ::-webkit-input-placeholder {
+    color: purple;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 100;
+    padding-left: 10px; }
+  .inputModal :-moz-placeholder {
+    /* Firefox 18- */
+    color: purple;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 100;
+    padding-left: 10px; }
+  .inputModal ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: purple;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 100;
+    padding-left: 10px; }
+  .inputModal :-ms-input-placeholder {
+    color: purple;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 100;
+    padding-left: 10px; }
+
+#input {
+  border: 1px solid #976aad;
+  padding: 5px; }
+
+#textArea {
+  margin-top: 1em;
+  border: 1px solid #976aad;
+  padding: 5px;
+  height: 100px; }
+
+#chBtn {
+  background-color: #976aad;
+  color: #f2f2f2; }
