@@ -1,67 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
+
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Le styles -->
-    <link href="../lib/bootstrap/css/bootstrap.css" rel="stylesheet">
-    <style>
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
-    <link href="../lib/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
 
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="css/plugins/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="../assets/js/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
-  </head>
+</head>
 
-  <body>
-
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+<body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Project name</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
         </div>
+        <div class="navbar-collapse collapse">
+            <div >
+                <form method="post" class="form form-reset text-center" action="">
+                    <input type="submit" value="Donate" class="btn btn-lg btn-success navbar-btn text-center">
+                </form>
+            </div>
+          <ul class="nav navbar-nav">
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+          </ul>
+        </div><!--/.nav-collapse -->
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" style="display: inline">
+      <div class="row">
 
-      <h1>Donate event page</h1>
-      <p>This is a basic Bootstrap template.</p>
+        <div class="col-lg-4 col-md-4">
+          <div class="panel panel-default">
+              <div id="profile-pic">
+                <img src="http://images.ak.instagram.com/profiles/profile_179722912_75sq_1339942564.jpg" class="img-rounded">
+              </div>
+              <div>
+                <p>Kathy Lee <br>36<br>Austin, Texas</p>
+              </div>
+              <div id="social sharing">
+                <img src="http://www.x-cart.com/sites/all/themes/xcartcom/images/xcart_vs_magento/logo_xcart_social.png" class="img-rounded">
+              </div>
+
+           </div>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <h1>$1050 Donated</h1>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                    60%
+                  </div>
+                </div>
+                <div >
+                  <form method="post" class="form form-reset" action="">
+                    <input type="submit" value="Donate" class="btn btn-success navbar-btn pull-right">
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+               Top Donors
+              </div>
+              <div class="panel-body">
+                    <p href="#" class="list-group-item">John Smith $200</p>
+                    <p href="#" class="list-group-item">Sue Sawyer $70</p>
+                    <p href="#" class="list-group-item">Anonymous $20</p>
+              </div>
+
+            </div>
+        </div>
+
+
+
+        <div class="col-lg-8 col-md-8">
+
+        <div class="panel panel-default">
+            <div class="panel-body">
+
+                <div class="text-left">
+                    <h1>Kathy's 36th Birthday</h1>
+                    <br>
+                    <h5>Hey all, I am turning 36. Make this day special by donating to this wonderful cause</h5>
+                </div>
+            </div>
+
+        </div>
+
+
+         <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-clock-o fa-fw"></i> Event Description</h3>
+            </div>
+            <div class="panel-body">
+                <div><p>In Fall 2012 a generous family donated land to Givelight to honor the memory of their daughter who passed away in an untimely death at the age of 24. Givelight held two fundraising events so far and raised $335K for the construction of Maison de Lumiere Lor Hour of Light in Casablanca. We have found a pro bono architect based in San Francisco and we are partnering with University of San Francisco to build our next home.</p></div>
+
+                <div class="text-right">
+                    <a href="#">See Event Details <i class="fa fa-arrow-circle-right"></i></a>
+                </div>
+            </div>
+
+        </div>
+                    <!-- /.panel -->
+                    <div class="chat-panel panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-comments fa-fw"></i>
+                            Comments
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu slidedown">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-refresh fa-fw"></i> Refresh
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-check-circle fa-fw"></i> Available
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-times fa-fw"></i> Busy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-clock-o fa-fw"></i> Away
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-sign-out fa-fw"></i> Sign Out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Jack Sparrow</strong> 
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <div class="input-group">
+                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-warning btn-sm" id="btn-chat">
+                                        Send
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- /.panel-footer -->
+                    </div>
+                    <!-- /.panel .chat-panel -->
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-clock-o fa-fw"></i> Impact
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="timeline">
+                                <li>
+                                    <div class="timeline-badge"><i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter</small>
+                                            </p>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-badge warning"><i class="fa fa-credit-card"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam, tenetur commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio, tempore. Animi officiis alias, officia repellendus.</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui est tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad aut recusandae minus eaque facere.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-badge danger"><i class="fa fa-bomb"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam, voluptatem totam quaerat, magni commodi quisquam.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit! Aperiam officiis quidem delectus libero, omnis ut debitis!</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-badge info"><i class="fa fa-save"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus modi quam ipsum alias at est molestiae excepturi delectus nesciunt, quibusdam debitis amet, beatae consequuntur impedit nulla qui! Laborum, atque.</p>
+                                            <hr>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                                                    <i class="fa fa-gear"></i>  <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#">Action</a>
+                                                    </li>
+                                                    <li><a href="#">Another action</a>
+                                                    </li>
+                                                    <li><a href="#">Something else here</a>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga odio quibusdam. Iure expedita, incidunt unde quis nam! Quod, quisquam. Officia quam qui adipisci quas consequuntur nostrum sequi. Consequuntur, commodi.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="timeline-inverted">
+                                    <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="timeline-panel">
+                                        <div class="timeline-heading">
+                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
+                                        </div>
+                                        <div class="timeline-body">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati, quaerat tempore officia voluptas debitis consectetur culpa amet, accusamus dolorum fugiat, animi dicta aperiam, enim incidunt quisquam maxime neque eaque.</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+
+      </div>
+
+      <!--h1>Donate event page</h1>
+      <p>This is a basic Bootstrap template.</p-->
 
     </div> <!-- /container -->
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
-  </body>
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
+
+</body>
+
 </html>
