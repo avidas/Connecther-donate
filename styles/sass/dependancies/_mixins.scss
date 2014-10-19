@@ -11,12 +11,13 @@
 	        border-radius: $radius;
 }
 
-@mixin place-holder($color, $fontStyle, $fontSize, $fontWeight){
+@mixin place-holder($color, $fontStyle, $fontSize, $fontWeight, $paddingLeft){
 	::-webkit-input-placeholder {
 	   color: $color;
 	   font-style: $fontStyle;
 	   font-size: $fontSize;
 	   font-weight: $fontWeight;
+	   padding-left: $paddingLeft;
 	}
 
 	:-moz-placeholder { /* Firefox 18- */
@@ -24,6 +25,7 @@
 	   font-style: $fontStyle; 
 	   font-size: $fontSize;
 	   font-weight: $fontWeight;
+	   padding-left: $paddingLeft;
 	}
 
 	::-moz-placeholder {  /* Firefox 19+ */
@@ -31,12 +33,14 @@
 	   font-style: $fontStyle; 
 	   font-size: $fontSize; 
 	   font-weight: $fontWeight;
+	   padding-left: $paddingLeft;
 	}
 
 	:-ms-input-placeholder {  
 	   color: $color;
 	   font-style: $fontStyle;
 	   font-size: $fontSize;
-	   font-weight: $fontWeight;  
+	   font-weight: $fontWeight; 
+	   padding-left: $paddingLeft; 
 	}
 }

@@ -3,11 +3,52 @@ body {
 
 #chNav {
   background-color: #976aad; }
+  #chNav #chNL {
+    margin-left: 14em;
+    margin-top: 20px; }
+    #chNav #chNL input {
+      background-color: #976aad;
+      width: 400px;
+      border: 0px;
+      border-bottom: 1px solid purple; }
+    #chNav #chNL ::-webkit-input-placeholder {
+      color: purple;
+      font-style: italic;
+      font-size: 13px;
+      font-weight: 100;
+      padding-left: 10px; }
+    #chNav #chNL :-moz-placeholder {
+      /* Firefox 18- */
+      color: purple;
+      font-style: italic;
+      font-size: 13px;
+      font-weight: 100;
+      padding-left: 10px; }
+    #chNav #chNL ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: purple;
+      font-style: italic;
+      font-size: 13px;
+      font-weight: 100;
+      padding-left: 10px; }
+    #chNav #chNL :-ms-input-placeholder {
+      color: purple;
+      font-style: italic;
+      font-size: 13px;
+      font-weight: 100;
+      padding-left: 10px; }
   #chNav .chA {
     color: #f2f2f2; }
+    #chNav .chA #glass {
+      font-size: 30px; }
+    #chNav .chA #folder {
+      font-size: 25px; }
+    #chNav .chA #search {
+      position: relative;
+      color: #f2f2f2; }
 
 #content {
-  margin-top: 6em; }
+  margin-top: 5em; }
   #content .donatePro {
     margin-left: 2em;
     margin-right: 2em;
