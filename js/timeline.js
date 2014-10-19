@@ -45,7 +45,7 @@
                 tbox +=   '</div>';
                 tbox += '</div>';
 
-                $(".timeline").prepend(tbox); 
+                $(".timeline").append(tbox); 
               }
               
             }
