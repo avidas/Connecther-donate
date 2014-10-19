@@ -1,5 +1,3 @@
-EventDonor = {};
-
 EventDonor.projectObserver = {
   selectedProjectID: ""
 };
